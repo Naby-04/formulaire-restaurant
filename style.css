@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  /* border: 1px solid red; */
+}
+body {
+  background: linear-gradient(to right, #943e0c, #cf6f02, #ffc020);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  width: 700px;
+  margin: auto;
+  /* margin-top: 10px; */
+  padding: 10px;
+  background: transparent;
+}
+
+/* formulaire */
+
+form {
+  width: 300px;
+  padding: 30px;
+  /* margin: auto; */
+  background: #7a340d;
+}
+.price-num div {
+  width: 120px;
+  margin-bottom: 10px;
+}
+select {
+  width: 35px;
+  font-size: 20px;
+  background: transparent;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+.price,
+.people {
+  font-size: 20px;
+}
+.people {
+  display: flex;
+  justify-content: space-between;
+}
+.comment label {
+  display: block;
+}
+textarea {
+  margin-left: 90px;
+  border-bottom: 1px solid;
+  resize: none;
+  font-size: 20px;
+  background: transparent;
+}
+
+/* les inputs */
+
+input {
+  width: 200px;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  background: transparent;
+}
+.label-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* buttons */
+
+button {
+  padding: 20px;
+  width: 200px;
+  margin: 10px;
+  background: linear-gradient(#943e0c, #cf6f02);
+}
+button:hover {
+  background: linear-gradient(#943e0c, #ffc020);
+}
+
+/* gerons le cotes droit */
+
+.right-side {
+  background: url(restaurant.jpg);
+  background-size: cover;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+.contacts {
+  height: 100px;
+  background: linear-gradient(#b753069d, #ffc0209f);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* responsivite */
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  form {
+    width: 240px;
+  }
+  input {
+    font-size: 15px;
+    width: 120px;
+  }
+  .right-side {
+    height: 600px;
+    width: 300px;
+  }
+  textarea {
+    width: 145px;
+  }
+  button {
+    margin-left: 30px;
+  }
+}
